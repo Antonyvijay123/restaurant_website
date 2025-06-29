@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="card">
+    <img src="https://codingyaar.com/wp-content/uploads/card-image-boat-scaled.jpg" alt="">
+    <div class="description">
+      <h2>Card title</h2>
+      <p>Some dummy description about this card you don't need to read.</p>
+      <button>Know More</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://codingyaar.com/wp-content/uploads/card-image-boat-scaled.jpg" alt="">
+    <div class="description">
+      <h2>Card title</h2>
+      <p>Some dummy description about this card you don't need to read.</p>
+      <button>Know More</button>
+    </div>
+  </div>
+  
+ 
+</body>
+</html>
+
+<style>
+  body {
+    padding-top: 3em;
+  }
+  .card {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 17em;
+    margin: 1em;
+    text-align: center;
+    margin-inline: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  .card img {
+    max-width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0%);
+  }
+  .description {
+    padding: 0 1em 1em 1em;
+  }
+  button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #836953;
+    border: none;
+  }
+  
+  .card:nth-child(2) {
+    background-color: #836953;
+    color: #fff;
+  }
+  
+  .card:nth-child(2) button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #836953;
+    background-color: #fff;
+    border: 1px solid #836953;
+  }
+  
+</style>

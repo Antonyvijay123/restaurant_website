@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="forms">
+        <input type="text" placeholder="Enter Your Name ">
+        <input type="text" placeholder="Enter your Mobile Number">
+        <input type="text" placeholder="Enter the name of the Food">
+        <input type="text" placeholder="Enter the Quantity">
+        <input type="text" placeholder="Enter Your Address">
+        <button>submit</button>
+    </div>
+</body>
+</html>
+
+<style>
+
+    .forms {
+        width: 500px;
+        
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .forms input {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .forms input:focus {
+        border-color: rgba(18, 251, 72, 0.5);;
+        outline: none;
+        box-shadow: 0 0 5px rgba(34, 255, 86, 0.5);
+    }
+    
+    .forms button {
+        padding: 10px;
+        background: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .forms button:hover {
+        background: orangered;
+        
+    }
+    
+</style>

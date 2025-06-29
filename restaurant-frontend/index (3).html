@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Restaurant - Delicious Food Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header with Mobile Navigation -->
+    <header class="heads">
+        <div class="nav-container">
+            <img src="restlogo.png" class="logo" alt="Restaurant Logo">
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" onclick="closeMobileMenu()">Home</a>
+                <a href="#Abouts" onclick="closeMobileMenu()">About</a>
+                <a href="#menus" onclick="closeMobileMenu()">Menu</a>
+                <a href="#gallerys" onclick="closeMobileMenu()">Gallery</a>
+                <a href="#reviews" onclick="closeMobileMenu()">Review</a>
+                <a href="#orders" onclick="closeMobileMenu()">Order</a>
+                <a href="#chefs" onclick="closeMobileMenu()">Chefs</a>
+            </nav>
+            
+            <!-- Header Icons -->
+            
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="homes">
+        <div class="home">
+            <div class="home-content">
+                <h1>An Heaven space for <span>FoodLovers!</span></h1>
+                <p>Welcome to Fatula!, where delicious flavors meet a warm ambiance. 
+                    Enjoy our expertly crafted dishes, from sizzling appetizers to mouthwatering 
+                    entrées and decadent desserts. Experience exceptional service and a cozy atmosphere 
+                    perfect for family gatherings, romantic dinners, or casual outings. Visit us for a delightful culinary journey!</p>
+                <a href="#orders"><button class="order-button">Order Now</button></a> 
+            </div>
+            <div class="home-image">
+               <img src="food.jpg" alt="Delicious Food" class="home-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="Abouts" id="Abouts">
+        <div class="section-header">
+            <h2>About <span>Us</span></h2>
+        </div>
+        <div class="About">
+           <div class="about-image">
+            <img src="food2.jpg" alt="About Us" class="about-img">
+           </div> 
+           <div class="about-content">
+                <h3>Why Choose Us?</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro assumenda, ipsam dignissimos voluptatibus sunt autem odit blanditiis omnis, quidem, repellat molestias tempora. Cumque recusandae a pariatur saepe. Voluptatum, possimus iure.</p>
+                <!-- <button class="order-button">Order Now</button>    -->
+                  <a href="#orders"><button class="order-button">Order Now</button></a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menus" id="menus">
+        <div class="section-header">
+            <h2>Our <span>Menus</span></h2>
+        </div>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="menu1.jpg" alt="Chicken Pizza">
+                <div class="description">
+                  <h3>Chicken Pizza</h3>
+                  <p>"Topped with juicy chicken, melted cheese, and a burst of herbs."</p>
+                  <a href="#orders"><button>Buy Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu2.jpg" alt="Burger">
+                <div class="description">
+                  <h3>Burger</h3>
+                  <p>A hearty bite of grilled perfection stacked with fresh veggies.</p>
+                  <a href="#orders"><button>Buy Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu3.jpg" alt="Pasta">
+                <div class="description">
+                  <h3>Pasta</h3>
+                  <p>Classic Italian pasta tossed in a rich tomato and herb sauce.</p>
+                  <a href="#orders"><button>Buy Now</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu4.jpg" alt="Chicken Lollipop">
+                <div class="description">
+                  <h3>Chicken Lollipop</h3>
+                  <p>Crispy chicken wings coated in fiery, tangy sauce..</p>
+                  <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu6.jpg" alt="Chicken Crunchy">
+                <div class="description">
+                  <h3>Chicken Crunchy</h3>
+                  <p>Golden-fried chicken that’s crunchy outside and juicy inside</p>
+                  <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu7.jpg" alt="Malai Chicken">
+                <div class="description">
+                  <h3>Malai Chicken</h3>
+                  <p>Creamy and tender chicken infused with mild spices and rich flavor.</p>
+                  <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food.jpg" alt="Pancake">
+                <div class="description">
+                  <h3>Pancake</h3>
+                  <p>Soft, fluffy pancakes served with syrup and a touch of sweetness.</p>
+                  <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="menu1.jpg" alt="Margherita Pizza">
+                <div class="description">
+                  <h3>Margherita Pizza</h3>
+                  <p>Creamy and tender chicken infused with mild spices and rich flavor.</p>
+                  <button>Buy Now</button>
+                </div>
+            </div>
+             <div class="card">
+            <img src="menu3.jpg" alt="">
+            <div class="description">
+              <h2>Chicken Pizza</h2>
+              <p>Topped with juicy chicken, melted cheese, and a burst of herbs.</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </section> 
+
+    <!-- Gallery Section -->
+    <section id="gallerys">
+        <div class="section-header">
+            <h2>Our <span>Gallery</span></h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="hover-container">
+                <img src="menu1.jpg" alt="Margherita Pizza" class="hover-image">
+                <div class="hover-content">
+                    <h3>Margherita Pizza</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                    <a href="#orders"><button class="gallery-btn">Buy Now</button></a>
+                </div>
+            </div>
+            <div class="hover-container">
+                <img src="menu3.jpg" alt="Fruit Pasta" class="hover-image">
+                <div class="hover-content">
+                    <h3>Fruit Pasta</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                    <a href="#orders"><button class="gallery-btn">Buy Now</button></a>
+                </div>
+            </div>
+            <div class="hover-container">
+                <img src="menu4.jpg" alt="Chicken Drumstick" class="hover-image">
+                <div class="hover-content">
+                    <h3>Chicken Drumstick</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                   <a href="#orders"> <button class="gallery-btn">Buy Now</button></a>
+                </div>
+            </div>
+            <div class="hover-container">
+                <img src="menu2.jpg" alt="Burger Combo" class="hover-image">
+                <div class="hover-content">
+                    <h3>Burger Combo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                    <button class="gallery-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="hover-container">
+                <img src="menu6.jpg" alt="Crispy Chicken" class="hover-image">
+                <div class="hover-content">
+                    <h3>Crispy Chicken</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                    <button class="gallery-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="hover-container">
+                <img src="menu7.jpg" alt="Paneer Gravy" class="hover-image">
+                <div class="hover-content">
+                    <h3>Paneer Gravy</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum magni nesciunt aliquam at! Voluptatum culpa quia libe.</p>
+                    <button class="gallery-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-review" id="reviews">
+        <div class="section-header">
+            <h2>Customer <span>Reviews</span></h2>
+        </div>
+        <div class="reviews">
+            <div class="card1">
+                <img src="men1.jpg" alt="John Dael" class="review-img">
+                <h4 class="reviewer-name">Joseph</h4>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus odio enim perferendis dolor similique accusantium, repudiandae voluptate.</p>
+            </div>
+            <div class="card1">
+                <img src="women1.jpg" alt="Jennifer" class="review-img">
+                <h4 class="reviewer-name">Jennifer</h4>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus odio enim perferendis dolor similique accusantium, repudiandae voluptate.</p>
+            </div>
+            <div class="card1">
+                <img src="men4.jpg" alt="Peter Paul" class="review-img">
+                <h4 class="reviewer-name">Peter Paul</h4>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus odio enim perferendis dolor similique accusantium, repudiandae voluptate.</p>
+            </div>
+            <div class="card1">
+                <img src="men3.jpg" alt="Victor Rias" class="review-img">
+                <h4 class="reviewer-name">Niyas khan</h4>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus odio enim perferendis dolor similique accusantium, repudiandae voluptate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+     <section class="bg-section" id="orders">
+    <div class="order-overlay">
+        <h2>Order <span>Now</span></h2>
+        <div class="forms">
+            <form id="orderForm">
+                <input type="text" id="customerName" name="customerName" placeholder="Enter Your Name" required>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your Mobile Number" required>
+                <input type="text" id="foodItem" name="foodItem" placeholder="Enter the name of the Food" required>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter the Quantity" min="1" required>
+                <textarea id="address" name="address" placeholder="Enter Your Address" rows="3" required></textarea>
+                <button type="submit" id="submitBtn">Submit Order</button>
+            </form>
+            
+            <!-- Success/Error Messages -->
+            <div id="messageContainer" style="display: none; margin-top: 20px; padding: 15px; border-radius: 5px;">
+                <p id="messageText"></p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <section class="bg-section" id="orders">
+        <div class="order-overlay">
+            <h2>Order <span>Now</span></h2>
+            <div class="forms">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="tel" placeholder="Enter your Mobile Number" required>
+                <input type="text" placeholder="Enter the name of the Food" required>
+                <input type="number" placeholder="Enter the Quantity" required>
+                <textarea placeholder="Enter Your Address" rows="3" required></textarea>
+                <button type="submit">Submit Order</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Chefs Section -->
+    <section class="chefs-section" id="chefs">
+        <div class="section-header">
+            <h2>Our <span>Master Chefs</span></h2>
+        </div>
+        <div class="chef">
+            <div class="chefcard">
+                <img src="newchef2.jpg" alt="Senior Chef Joseph">
+                <h5>Senior Chef Joseph</h5>
+            </div>
+            <div class="chefcard">
+                <img src="newchef.jpg" alt="Senior Chef Hana">
+                <h5>Senior Chef Hana</h5>
+            </div>
+            <div class="chefcard">
+                <img src="chef4.jpg" alt="Senior Chef Rufina">
+                <h5>Senior Chef Rufina</h5>
+            </div> 
+            <!-- <div class="chefcard">
+                <img src="chef3.jpg" alt="Senior Chef Peter">
+                <h5>Senior Chef Peter</h5>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footers">
+            <div class="footer-column">
+                <h5>Location</h5>
+                <ul>
+                    <li>USA</li>
+                    <li>INDIA</li>
+                    <li>JAPAN</li>
+                    <li>CHINA</li>
+                    <li>ITALY</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Quick Link</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Abouts">About</a></li>
+                    <li><a href="#menus">Menu</a></li>
+                    <li><a href="#gallerys">Gallery</a></li>
+                    <li><a href="#orders">Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Contact</h5>
+                <ul>
+                    <li>+94 123456789</li>
+                    <li>+91 232323232</li>
+                    <li>antonyvijay1005@gmail.com</li>
+                    <li>rajkumar@gmail.com</li>
+                    <li>suryaram@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Our Services</h5>
+                <ul>
+                    <li>Fast Delivery</li>
+                    <li>Easy Payments</li>
+                    <li>24 x 7 Services</li>
+                    <li>Affordable</li>
+                    <li>Trust-worthy</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-linkedin-square'></i>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            <p> Restaurant. All rights reserved.</p>
+        </div> -->
+    </footer>
+
+    <script>
+ // script for orders page
+    document.getElementById('orderForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const submitBtn = document.getElementById('submitBtn');
+    const messageContainer = document.getElementById('messageContainer');
+    const messageText = document.getElementById('messageText');
+    
+    // Disable submit button
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+    
+    // Get form data
+    const formData = {
+        customerName: document.getElementById('customerName').value,
+        mobileNumber: document.getElementById('mobileNumber').value,
+        foodItem: document.getElementById('foodItem').value,
+        quantity: document.getElementById('quantity').value,
+        address: document.getElementById('address').value
+    };
+    
+    try {
+        // Send data to backend
+        const response = await fetch('https://restaurant-backend-wd0d.onrender.com/api/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            // Success
+            messageContainer.style.display = 'block';
+            messageContainer.style.backgroundColor = '#d4edda';
+            messageContainer.style.color = '#155724';
+            messageContainer.style.border = '1px solid #c3e6cb';
+            messageText.textContent = `Order placed successfully!`;
+            
+            // Reset form
+            document.getElementById('orderForm').reset();
+        } else {
+            // Error
+            throw new Error(result.message);
+        }
+        
+    } catch (error) {
+        // Error handling
+        messageContainer.style.display = 'block';
+        messageContainer.style.backgroundColor = '#f8d7da';
+        messageContainer.style.color = '#721c24';
+        messageContainer.style.border = '1px solid #f5c6cb';
+        messageText.textContent = `Error: ${error.message}`;
+    } finally {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Order';
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageContainer.style.display = 'none';
+        }, 5000);
+    }
+});
+
+// hamburger menu for responsive of navbar
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.remove('active');
+            toggle.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const header = document.querySelector('.heads');
+            
+            if (!header.contains(event.target)) {
+                navMenu.classList.remove('active');
+                toggle.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

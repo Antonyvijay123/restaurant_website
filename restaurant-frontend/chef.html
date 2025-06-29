@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+
+        <img src="men1.jpg" alt="">
+        <h5>Senior Chef Joseph</h5>
+    </div>
+</body>
+</html>
+
+<style>
+    
+    .card{
+
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        height:250px;
+        width:250px;
+        position: relative;
+        top:200px;
+        left:200px;
+        border-radius: 50%;
+        
+    }
+    .card img{
+        position:absolute;
+        height:200px;
+        width:200px;
+        margin-left: 25px;
+        margin-top:25px;
+        border-radius: 50%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card img:hover{
+
+        transform: scale(1.1)translateY(-60px);
+        border-radius: 20px;
+    }
+    .card:hover{
+        border-radius: 20px;
+    }
+
+    .card h5{
+        position:absolute;
+        left:40px;
+        top:160px;
+        opacity: 0;
+        font-size: 20px;
+        color:orangered;
+    }
+    .card:hover h5
+    {
+        opacity: 1;
+    }
+</style>
